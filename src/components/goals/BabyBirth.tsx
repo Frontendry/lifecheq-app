@@ -6,7 +6,7 @@ import family from "../../assets/svgs/family.svg"
 
 
 const BabyBirth = () => {
-      return <Goal goalName="Bab's Birth" imgSrc={family}/>;
+      return <Goal goalName="Baby's Birth" imgSrc={family}/>;
 }
 
 export default BabyBirth
