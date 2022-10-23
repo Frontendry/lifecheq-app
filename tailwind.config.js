@@ -25,6 +25,7 @@ module.exports = {
       },
       minHeight: {
         34: "8.5rem",
+        43: "10.438rem",
       },
       boxShadow: {
         "md-2": "0px 4px 12px rgba(0, 0, 0, 0.25)",
