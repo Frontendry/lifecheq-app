@@ -6,3 +6,7 @@ export interface GoalLayoutProps {
 export interface TimeLayoutProps {
   children: JSX.Element | JSX.Element[]
 }
+
+export interface TimeframeNameProps {
+  name: string
+}
