@@ -1,12 +1,8 @@
-// Goals
-import BabyBirth from "./components/goals/BabyBirth";
+// Timelines
+import OneYearNineMonths from "./components/Timeline/OneYearNineMonths";
 
 function App() {
-  return (
-    <main>
-     <BabyBirth/>
-    </main>
-  );
+  return <main className="flex"><OneYearNineMonths/></main>;
 }
 
 export default App;
