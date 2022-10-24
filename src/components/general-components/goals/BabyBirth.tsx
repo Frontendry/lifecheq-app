@@ -5,8 +5,6 @@ import GoalLayout from "./GoalLayout";
 import family from "../../../assets/svgs/family.svg"
 
 
-const BabyBirth = () => {
-      return <GoalLayout goalName="Baby's Birth" imgSrc={family} />;
-}
+const BabyBirth = () => <GoalLayout goalName="Baby's Birth" imgSrc={family} />
 
 export default BabyBirth

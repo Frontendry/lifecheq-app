@@ -1,7 +1,8 @@
+// Interfaces
 import { TimeframeNameProps } from "../../../utils/interfaces"
+
+// Components
 import Separator from "./Separator";
-
-
 
 const TimeframeName = ({ name }: TimeframeNameProps) => {
       return (
