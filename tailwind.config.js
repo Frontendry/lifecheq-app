@@ -10,6 +10,9 @@ module.exports = {
         sm: ["14px", "130%"],
       },
       colors: {
+        teal: {
+          650: "#00B897",
+        },
         cyan: {
           750: "#3C7F90",
           850: "#215A6B",
@@ -24,6 +27,7 @@ module.exports = {
         34: "8.5rem",
       },
       minHeight: {
+        4.5: "1.125rem",
         34: "8.5rem",
         43: "10.438rem",
       },
@@ -32,6 +36,12 @@ module.exports = {
       },
       borderRadius: {
         "5px": "5px",
+      },
+      gridTemplateColumns: {
+        separator: "1fr 8px 1fr",
+      },
+      strokeWidth: {
+        4: "4px",
       },
     },
   },
