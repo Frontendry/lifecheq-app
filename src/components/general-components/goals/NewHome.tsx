@@ -5,7 +5,7 @@ import GoalLayout from "./GoalLayout";
 import home from "../../../assets/svgs/home.svg"
 
 const NewHome = () => (
-  <GoalLayout goalName="New Home" imgSrc={home} oppositeSide={true} />
+  <GoalLayout goalName="New Home" imgSrc={home} />
 );
 
 export default NewHome;

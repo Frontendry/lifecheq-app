@@ -12,3 +12,7 @@ export interface TimeframeNameProps {
   name: string
 }
 
+export interface TimeframeGapProps {
+spacing:number
+}
+
