@@ -1,6 +1,7 @@
 export interface GoalLayoutProps {
   goalName: string;
   imgSrc: string;
+  oppositeSide?: boolean
 }
 
 export interface TimeLayoutProps {
@@ -10,3 +11,4 @@ export interface TimeLayoutProps {
 export interface TimeframeNameProps {
   name: string
 }
+
