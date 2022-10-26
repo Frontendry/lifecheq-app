@@ -1,7 +1,20 @@
-import { TimeframeGapProps } from "../../../utils/interfaces"
+// React Modules
+import { useContext } from "react";
 
-const TimeframeGap = ({ spacing }: TimeframeGapProps) => {
-  return <div></div>;
+// Context
+import TimeframeSpaceContext from "../../../utils/TimeframeSpacingContext";
+
+const TimeframeGap = () => {
+  const timeframeContextVal = useContext(TimeframeSpaceContext);
+  const spacing = timeframeContextVal?.spacing
+  
+  return (
+    <div
+      style={{
+        width: `${spacing}px`,
+      }}
+    ></div>
+  );
 };
 
 export default TimeframeGap

@@ -1,9 +1,6 @@
 // React Modules
 import { useEffect, useState } from "react";
 
-// Interface
-import { TimeframeProps } from "../../../utils/interfaces";
-
 // Time Frame Components
 import TimeframeName from "../../general-components/timeframe/TimeframeName";
 

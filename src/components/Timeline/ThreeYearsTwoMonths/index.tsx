@@ -5,9 +5,9 @@ import { useEffect, useState } from "react";
 import TimeframeLayout from "../../general-components/timeframe/TimeframeLayout";
 
 // Time Frame Components
-import BabyBirth from "../../general-components/goals/BabyBirth";
+import Holiday from "../../general-components/goals/Holiday";
 import TimeframeName from "../../general-components/timeframe/TimeframeName";
-import NewHome from "../../general-components/goals/NewHome";
+
 
 const TimeFrame = () => {
   const [uniformNameHeight, setUniformSetHeight] = useState<number>(0);
@@ -37,12 +37,11 @@ const TimeFrame = () => {
   }, []);
   return (
     <TimeframeLayout>
-      <BabyBirth />
+      <Holiday />
       <TimeframeName
-        name="In 1 year and 9 months"
-        uniformNameHeight={uniformNameHeight}       
+        name="In 3 years and 2 months"
+        uniformNameHeight={uniformNameHeight}
       />
-      <NewHome />
     </TimeframeLayout>
   );
 };

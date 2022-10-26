@@ -10,16 +10,18 @@ export interface TimeLayoutProps {
 }
 
 export interface TimeframeProps {
-  uniformNameHeight : number
+  uniformNameHeight?: number;
 }
 
 export interface TimeframeNameProps {
   name: string;
   uniformNameHeight: number;
-  separator2?:boolean
+  separator2?: boolean;
 }
 
-export interface TimeframeGapProps {
-spacing:number
-}
+export interface TimeframeSpaceValContext {
+  spacing: number;
+} 
+
+
 

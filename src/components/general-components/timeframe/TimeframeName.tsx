@@ -12,7 +12,7 @@ function nameMarkup(name : string) {
 const TimeframeName = ({
   name,
   uniformNameHeight,
-  separator2,
+  separator2
 }: TimeframeNameProps) => {
   return (
     <div className="flex flex-col text-center relative">
