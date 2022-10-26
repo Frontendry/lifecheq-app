@@ -8,8 +8,13 @@ export interface TimeLayoutProps {
   children: JSX.Element | JSX.Element[]
 }
 
+export interface TimeframeProps {
+  uniformNameHeight : number
+}
+
 export interface TimeframeNameProps {
-  name: string
+  name: string;
+  uniformNameHeight: number
 }
 
 export interface TimeframeGapProps {

@@ -30,6 +30,7 @@ module.exports = {
         4.5: "1.125rem",
         34: "8.5rem",
         43: "10.438rem",
+        101: "26.063rem",
       },
       boxShadow: {
         "md-2": "0px 4px 12px rgba(0, 0, 0, 0.25)",
@@ -42,6 +43,9 @@ module.exports = {
       },
       strokeWidth: {
         4: "4px",
+      },
+      spacing: {
+        custom1: "calc(100% + 6px + 1.7rem)",
       },
     },
   },

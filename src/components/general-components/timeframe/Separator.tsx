@@ -15,7 +15,7 @@ const SeparatorLine = () => {
 
 const Separator = () => {
   return (
-    <div className="grid grid-cols-separator gap-x-1 items-center min-h-4.5 absolute -top-[1.625rem] left-0 w-full">
+    <div className="grid grid-cols-separator gap-x-1 items-center min-h-4.5 mb-2">
       <figure>
         <SeparatorLine />
       </figure>

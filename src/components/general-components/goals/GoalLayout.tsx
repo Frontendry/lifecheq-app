@@ -6,16 +6,10 @@ import { UpArrow, DownArrow } from "./Arrows";
 
 const GoalLayout = ({ goalName, imgSrc, oppositeSide }: GoalLayoutProps) => {
   return (
-    <div
-      className={`flex flex-col items-center w-full min-h-43 ${
-        oppositeSide
-          ? "absolute left-0 bottom-[calc(100% + 6px + 1.4rem)]"
-          : ""
-      }`}
-    >
+    <div className={`flex flex-col items-center w-full min-h-43 `}>
       <div
-        className={`border border-cyan-750 w-0 h-4 rounded-full mt-[8.52px] mb-[11px] ${
-          oppositeSide ? "order-3 mb-0" : ""
+        className={`border border-cyan-750 w-0 h-4 rounded-full ${
+          oppositeSide ? "order-3 mt-[8.52px] mb-1.5" : "mt-[8.52px] mb-[11px]"
         }`}
       ></div>
 
