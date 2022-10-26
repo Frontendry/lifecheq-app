@@ -5,7 +5,7 @@ import GoalLayout from "./GoalLayout";
 import emergency from "../../../assets/svgs/em-fund.svg"
 
 const EmergencyFund = () => (
-  <GoalLayout goalName="Emergency Fund" imgSrc={emergency} />
+  <GoalLayout goalName="Emergency <br> fund" imgSrc={emergency} />
 );
 
 export default EmergencyFund;

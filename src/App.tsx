@@ -8,12 +8,14 @@ import ThreeYearsTwoMonths from "./components/Timeline/ThreeYearsTwoMonths"
 import TimeframeGap from './components/general-components/timeframe/TimeframeGap';
 import FourYearsNineMonths from "./components/Timeline/FourYearsNineMonths"
 import EightYearsElevenMonths from "./components/Timeline/EightYearsElevenMonths"
+import Ultimately from "./components/Timeline/Ultimately"
 
 function App() {
  
   return (
     <main className="grid grid-flow-col auto-cols-min min-h-screen justify-center">
       <StartingPoint />
+
       <TimeframeSpaceContext.Provider value={{ spacing: 8 }}>
         <OneYearNineMonths />
         <TimeframeGap />
@@ -29,8 +31,12 @@ function App() {
         <TimeframeGap />
       </TimeframeSpaceContext.Provider>
 
-      <EightYearsElevenMonths/>
-     
+      <TimeframeSpaceContext.Provider value={{ spacing: 12 }}>
+        <EightYearsElevenMonths />
+        <TimeframeGap />
+      </TimeframeSpaceContext.Provider>
+
+      <Ultimately/>
     </main>
   );
 }

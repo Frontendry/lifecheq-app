@@ -1,7 +1,14 @@
 export interface GoalLayoutProps {
   goalName: string;
   imgSrc: string;
-  oppositeSide?: boolean
+  oppositeSide?: boolean;
+  alignRight?: boolean;
+  alternateColor?: boolean;
+}
+
+export interface ArrowsProps {
+  alignRight?: boolean;
+  alternateColor?:boolean
 }
 
 export interface TimeLayoutProps {
@@ -17,6 +24,8 @@ export interface TimeframeNameProps {
   name: string;
   uniformNameHeight: number;
   separator2?: boolean;
+  separator3?: boolean;
+  alignRight?: boolean;
 }
 
 export interface TimeframeSpaceValContext {

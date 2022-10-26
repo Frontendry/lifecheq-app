@@ -40,7 +40,7 @@ const TimeFrame = () => {
     <TimeframeLayout>
       <div className="min-h-43 mb-1.5"></div>
       <TimeframeName
-        name="In 8 years and 11 months"
+        name="In 8 years and <br> 11 months"
         uniformNameHeight={uniformNameHeight}
       />
       <DebtFree />

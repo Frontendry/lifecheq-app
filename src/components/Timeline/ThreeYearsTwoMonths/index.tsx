@@ -39,7 +39,7 @@ const TimeFrame = () => {
     <TimeframeLayout>
       <Holiday />
       <TimeframeName
-        name="In 3 years and 2 months"
+        name="In 3 years and <br> 2 months"
         uniformNameHeight={uniformNameHeight}
       />
     </TimeframeLayout>

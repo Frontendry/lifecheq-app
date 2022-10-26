@@ -6,7 +6,7 @@ import TimeframeLayout from "../../general-components/timeframe/TimeframeLayout"
 
 // Time Frame Components
 import TimeframeName from "../../general-components/timeframe/TimeframeName";
-import EmergencyFund from "../../general-components/goals/EmergencyFund";
+import Contribution from "../../general-components/goals/Contribution";
 
 const TimeFrame = () => {
   const [uniformNameHeight, setUniformSetHeight] = useState<number>(0);
@@ -40,9 +40,12 @@ const TimeFrame = () => {
     <TimeframeLayout>
       <div className="min-h-43 mb-1.5"></div>
       <TimeframeName
-        name="In 4 years and <br> 9 months"
-        uniformNameHeight={uniformNameHeight}/>
-      <EmergencyFund/>      
+        name="Ultimately"
+        uniformNameHeight={uniformNameHeight}
+        separator3={true}
+        alignRight={true}
+      />
+      <Contribution />
     </TimeframeLayout>
   );
 };
