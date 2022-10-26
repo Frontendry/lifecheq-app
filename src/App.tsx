@@ -6,6 +6,8 @@ import StartingPoint from './components/Timeline/StartingPoint'
 import OneYearNineMonths from "./components/Timeline/OneYearNineMonths";
 import ThreeYearsTwoMonths from "./components/Timeline/ThreeYearsTwoMonths"
 import TimeframeGap from './components/general-components/timeframe/TimeframeGap';
+import FourYearsNineMonths from "./components/Timeline/FourYearsNineMonths"
+import EightYearsElevenMonths from "./components/Timeline/EightYearsElevenMonths"
 
 function App() {
  
@@ -17,12 +19,18 @@ function App() {
         <TimeframeGap />
       </TimeframeSpaceContext.Provider>
 
-      <TimeframeSpaceContext.Provider value={{ spacing: 60 }}>
+      <TimeframeSpaceContext.Provider value={{ spacing: 19 }}>
         <ThreeYearsTwoMonths />
         <TimeframeGap />
       </TimeframeSpaceContext.Provider>
 
-      <OneYearNineMonths />
+      <TimeframeSpaceContext.Provider value={{ spacing: 77 }}>
+        <FourYearsNineMonths />
+        <TimeframeGap />
+      </TimeframeSpaceContext.Provider>
+
+      <EightYearsElevenMonths/>
+     
     </main>
   );
 }

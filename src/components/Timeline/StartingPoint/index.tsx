@@ -6,6 +6,7 @@ import TimeframeName from "../../general-components/timeframe/TimeframeName";
 
 // Time Frame Layout
 import TimeframeLayout from "../../general-components/timeframe/TimeframeLayout";
+
 const TimeFrame = () => {
       const [uniformNameHeight, setUniformSetHeight] = useState<number>(0);
       useEffect(() => {
