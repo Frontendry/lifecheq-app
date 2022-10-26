@@ -1,9 +1,9 @@
 
 // React Modules
-import {
-  useEffect, useState
-} from "react";
+import { useEffect, useState} from "react";
+
 // Timelines
+import StartingPoint from './components/Timeline/StartingPoint'
 import OneYearNineMonths from "./components/Timeline/OneYearNineMonths";
 
 function App() {
@@ -35,8 +35,9 @@ function App() {
      
   }, []);
   return (
-    <main className="flex min-h-screen items-center justify-center">
-      <OneYearNineMonths uniformNameHeight={uniformNameHeight} />
+    <main className="flex min-h-screen justify-center">
+      <StartingPoint />
+      <OneYearNineMonths />
     </main>
   );
 }
