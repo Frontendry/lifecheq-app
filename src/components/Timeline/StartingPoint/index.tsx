@@ -14,7 +14,9 @@ const TimeFrame = () => {
       useEffect(() => {
         const allWithClass = Array.from(
           document.querySelectorAll(".goal-name-wrap")
-        );
+            );
+            
+            console.log(allWithClass);
 
         const getMaxHeight = () => {
           let maxHeight: number | undefined = -1;
@@ -36,11 +38,12 @@ const TimeFrame = () => {
         setUniformSetHeight(getMaxHeight());
       }, []);
   return (
-    <TimeframeLayout>
+    <TimeframeLayout startTimeframe={true}>
       <div className="min-h-43 mb-1.5"></div>
       <TimeframeName
-        name="You are here"
+        name="You are<br>here"
         uniformNameHeight={uniformNameHeight}
+        separator2={true}
       />
     </TimeframeLayout>
   );

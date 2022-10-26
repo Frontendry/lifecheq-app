@@ -40,6 +40,7 @@ module.exports = {
       },
       gridTemplateColumns: {
         separator: "1fr 8px 1fr",
+        separator2: "1fr 18px 1fr",
       },
       strokeWidth: {
         4: "4px",

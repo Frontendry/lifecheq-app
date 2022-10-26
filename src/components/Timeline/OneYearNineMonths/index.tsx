@@ -44,6 +44,7 @@ const TimeFrame = () => {
       <TimeframeName
         name="In 1 year and 9 months"
         uniformNameHeight={uniformNameHeight}
+       
       />
       <NewHome />
     </TimeframeLayout>

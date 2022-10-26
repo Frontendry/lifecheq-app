@@ -5,7 +5,8 @@ export interface GoalLayoutProps {
 }
 
 export interface TimeLayoutProps {
-  children: JSX.Element | JSX.Element[]
+  children: JSX.Element | JSX.Element[];
+  startTimeframe?: boolean;
 }
 
 export interface TimeframeProps {
@@ -14,7 +15,8 @@ export interface TimeframeProps {
 
 export interface TimeframeNameProps {
   name: string;
-  uniformNameHeight: number
+  uniformNameHeight: number;
+  separator2?:boolean
 }
 
 export interface TimeframeGapProps {

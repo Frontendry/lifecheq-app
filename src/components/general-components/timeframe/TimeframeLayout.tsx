@@ -1,8 +1,14 @@
 // Interfaces
 import { TimeLayoutProps } from "../../../utils/interfaces";
 
-const TimeframeLayout = ({ children }: TimeLayoutProps) => (
-  <div className="flex flex-col w-33 relative">{children}</div>
+const TimeframeLayout = ({ children, startTimeframe }: TimeLayoutProps) => (
+  <div
+    className={`flex flex-col relative ${
+      startTimeframe ? "w-[4.438rem]" : "w-33"
+    }`}
+  >
+    {children}
+  </div>
 );
 
 export default TimeframeLayout;
