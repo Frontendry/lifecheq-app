@@ -6,6 +6,10 @@ export interface GoalLayoutProps {
   alternateColor?: boolean;
 }
 
+export interface separatorProps {
+  secondLast?: boolean;
+}
+
 export interface ArrowsProps {
   alignRight?: boolean;
   alternateColor?:boolean
@@ -22,10 +26,10 @@ export interface TimeframeProps {
 
 export interface TimeframeNameProps {
   name: string;
-  uniformNameHeight: number;
   separator2?: boolean;
   separator3?: boolean;
   alignRight?: boolean;
+  secondLast?:boolean
 }
 
 export interface TimeframeSpaceValContext {
