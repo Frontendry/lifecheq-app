@@ -1,4 +1,5 @@
-
+// React Modules
+import { useEffect, useState } from "react";
 
 // Interfaces
 import { TimeframeNameProps } from "../../../utils/interfaces";
@@ -18,7 +19,41 @@ const TimeframeName = ({
   alignRight,
   secondLast,
 }: TimeframeNameProps) => {
- 
+   const [uniformNameHeight, setUniformSetHeight] = useState<number>(0);
+
+   useEffect(() => {
+     const allWithClass = Array.from(
+       document.querySelectorAll(".goal-name-wrap")
+     );
+
+     const getMaxHeight = () => {
+       let maxHeight: number | undefined = -1;
+       allWithClass.forEach((element) => {
+         if (
+           element &&
+           element.querySelector(".mx-height-content-holder") &&
+           typeof element.querySelector(".mx-height-content-holder") !==
+             "undefined"
+         ) {
+           const clientHeightVal: number | undefined = element.querySelector(
+             ".mx-height-content-holder"
+           )?.clientHeight;
+           if (
+             typeof clientHeightVal !== "undefined" &&
+             typeof maxHeight !== "undefined" &&
+             clientHeightVal > maxHeight
+           ) {
+             maxHeight = clientHeightVal;
+           }
+         }
+       });
+
+       return maxHeight;
+     };
+
+     setUniformSetHeight(getMaxHeight());
+   }, []);
+  
   return (
     <div
       className={`flex flex-col text-center relative ${
@@ -35,7 +70,9 @@ const TimeframeName = ({
 
       <div
         className="flex flex-col justify-center goal-name-wrap overflow-hidden"
-        
+        style={{
+          height: `${uniformNameHeight}px`,
+        }}
       >
         <div className="mx-height-content-holder">
           <p

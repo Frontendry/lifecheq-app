@@ -1,5 +1,3 @@
-// React Modules
-import { useEffect, useState } from "react";
 
 // Context
 import TimeframeSpaceContext from "./utils/TimeframeSpacingContext";
@@ -14,37 +12,7 @@ import EightYearsElevenMonths from "./components/Timeline/EightYearsElevenMonths
 import Retire from "./components/Timeline/Retire";
 import Ultimately from "./components/Timeline/Ultimately";
 
-function App() {
-
-   const [uniformNameHeight, setUniformSetHeight] = useState<number>(0);
-
-   useEffect(() => {
-     const allWithClass = Array.from(
-       document.querySelectorAll(".goal-name-wrap")
-     );
-     
-     const getMaxHeight = () => {
-       let maxHeight: number | undefined = -1;
-       allWithClass.forEach((element) => {
-         if (
-           element &&
-           typeof element.querySelector(".mx-height-content-holder") !==
-             "undefined"
-         ) {
-           maxHeight = element.querySelector(
-             ".mx-height-content-holder"
-           )?.clientHeight;
-         }
-       });
- console.log(maxHeight);
-       return maxHeight;
-     };
-
-    
-
-     setUniformSetHeight(getMaxHeight());
-   }, []);
-  
+function App() {  
   return (
     <main className="flex justify-center items-center  min-h-screen">
       <div className="grid grid-flow-col auto-cols-min relative">
