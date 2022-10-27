@@ -11,6 +11,7 @@ import ThreeYearsTwoMonths from "./components/Timeline/ThreeYearsTwoMonths";
 import TimeframeGap from "./components/general-components/timeframe/TimeframeGap";
 import FourYearsNineMonths from "./components/Timeline/FourYearsNineMonths";
 import EightYearsElevenMonths from "./components/Timeline/EightYearsElevenMonths";
+import Retire from "./components/Timeline/Retire";
 import Ultimately from "./components/Timeline/Ultimately";
 
 function App() {
@@ -21,9 +22,7 @@ function App() {
      const allWithClass = Array.from(
        document.querySelectorAll(".goal-name-wrap")
      );
-
      
-
      const getMaxHeight = () => {
        let maxHeight: number | undefined = -1;
        allWithClass.forEach((element) => {
@@ -47,30 +46,34 @@ function App() {
    }, []);
   
   return (
-    <main className="grid grid-flow-col auto-cols-min min-h-screen justify-center">
-      <StartingPoint />
+    <main className="flex justify-center items-center  min-h-screen">
+      <div className="grid grid-flow-col auto-cols-min relative">
+        <StartingPoint />
 
-      <TimeframeSpaceContext.Provider value={{ spacing: 8 }}>
-        <OneYearNineMonths />
-        <TimeframeGap />
-      </TimeframeSpaceContext.Provider>
+        <TimeframeSpaceContext.Provider value={{ spacing: 8 }}>
+          <OneYearNineMonths />
+          <TimeframeGap />
+        </TimeframeSpaceContext.Provider>
 
-      <TimeframeSpaceContext.Provider value={{ spacing: 19 }}>
-        <ThreeYearsTwoMonths />
-        <TimeframeGap />
-      </TimeframeSpaceContext.Provider>
+        <TimeframeSpaceContext.Provider value={{ spacing: 19 }}>
+          <ThreeYearsTwoMonths />
+          <TimeframeGap />
+        </TimeframeSpaceContext.Provider>
 
-      <TimeframeSpaceContext.Provider value={{ spacing: 77 }}>
-        <FourYearsNineMonths />
-        <TimeframeGap />
-      </TimeframeSpaceContext.Provider>
+        <TimeframeSpaceContext.Provider value={{ spacing: 77 }}>
+          <FourYearsNineMonths />
+          <TimeframeGap />
+        </TimeframeSpaceContext.Provider>
 
-      <TimeframeSpaceContext.Provider value={{ spacing: 12 }}>
-        <EightYearsElevenMonths />
-        <TimeframeGap />
-      </TimeframeSpaceContext.Provider>
+        <TimeframeSpaceContext.Provider value={{ spacing: 12 }}>
+          <EightYearsElevenMonths />
+          <TimeframeGap />
+        </TimeframeSpaceContext.Provider>
 
-      <Ultimately />
+        <Retire />
+
+        <Ultimately />
+      </div>
     </main>
   );
 }
