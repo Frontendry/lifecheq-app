@@ -35,6 +35,3 @@ export interface TimeframeNameProps {
 export interface TimeframeSpaceValContext {
   spacing: number;
 } 
-
-
-

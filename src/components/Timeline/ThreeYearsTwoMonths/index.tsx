@@ -6,8 +6,7 @@ import Holiday from "../../general-components/goals/Holiday";
 import TimeframeName from "../../general-components/timeframe/TimeframeName";
 
 
-const TimeFrame = () => {
- 
+const TimeFrame = () => { 
   return (
     <TimeframeLayout>
       <Holiday />

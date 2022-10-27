@@ -5,8 +5,7 @@ import TimeframeLayout from "../../general-components/timeframe/TimeframeLayout"
 import TimeframeName from "../../general-components/timeframe/TimeframeName";
 import EmergencyFund from "../../general-components/goals/EmergencyFund";
 
-const TimeFrame = () => {
- 
+const TimeFrame = () => { 
   return (
     <TimeframeLayout>
       <div className="min-h-43 mb-1.5"></div>

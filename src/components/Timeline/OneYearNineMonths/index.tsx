@@ -6,8 +6,7 @@ import BabyBirth from "../../general-components/goals/BabyBirth";
 import TimeframeName from "../../general-components/timeframe/TimeframeName";
 import NewHome from "../../general-components/goals/NewHome";
 
-const TimeFrame = () => {
-  
+const TimeFrame = () => {  
   return (
     <TimeframeLayout>
       <BabyBirth />

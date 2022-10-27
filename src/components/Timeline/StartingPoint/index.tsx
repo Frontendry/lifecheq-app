@@ -1,11 +1,10 @@
-// Time Frame Components
-import TimeframeName from "../../general-components/timeframe/TimeframeName";
-
 // Time Frame Layout
 import TimeframeLayout from "../../general-components/timeframe/TimeframeLayout";
 
-const TimeFrame = () => {
-     
+// Time Frame Components
+import TimeframeName from "../../general-components/timeframe/TimeframeName";
+
+const TimeFrame = () => {     
   return (
     <TimeframeLayout startTimeframe={true}>
       <div className="min-h-43 mb-1.5"></div>
